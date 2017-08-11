@@ -51,7 +51,7 @@ for (let boardIndex = 0; boardIndex < BOARDS_COUNT; boardIndex++) {
         order: cardIndex,
         name: faker.hacker.phrase(),
         description: faker.lorem.paragraphs(),
-        columnId: columnIndex
+        columnId: columnIndex + boardIndex * COLUMNS_PER_BOARD
       });
     }
   }
